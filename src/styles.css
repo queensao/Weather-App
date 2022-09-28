@@ -1,19 +1,8 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid #25371c;
-  max-width: 650px;
-  margin: 30px auto;
-  border: 1px solid #dadde1;
-  display: block;
-  text-align: center;
-  padding: 20px 60px;
-  border-radius: 10px;
-  background-color: rgb(212, 246, 242);
+  background-color: white;
 }
 
-p {
-  text-align: center;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -23,6 +12,9 @@ ul {
   color: rgb(135, 135, 135);
   line-height: 19px;
   text-align: left;
+  position: fixed;
+  left: 62%;
+  top: 35%;
 }
 
 h1 {
@@ -36,11 +28,43 @@ h1 {
   text-align: left;
   margin-bottom: 0;
 }
+p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
+.entirity {
+  max-width: 650px;
+  margin: 30px auto;
+  border: 1px solid #dadde1;
+  text-align: center;
+  display: block;
+  padding: 20px 60px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
 
 .search-box {
-  width: 70%;
+  width: 80%;
   height: 38px;
   border-radius: 5px;
+  border: 1px solid #526072;
+  background-color: rgb(188, 188, 240);
 }
 
 .caption {
@@ -77,4 +101,10 @@ h1 {
 
 .temp {
   font-size: 12px;
+}
+
+.units {
+  position: relative;
+  font-size: 10px;
+  top: -8px;
 }
