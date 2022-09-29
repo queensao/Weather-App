@@ -20,20 +20,23 @@
      <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
+    <div class="container">
     <div class="entirity row">
      <form id="search-form">
       
-      <input type = "search" placeholder="Name of city..." autofocus="on" autocomplete="off" id="city-input" class="search-box"/>
+      <input type = "search" placeholder="Name of city..." autofocus="off" autocomplete="off" id="city-input" class="search-box"/>
 
 
-      <input type = "submit" value = "search" class="btn btn-primary button"/>
+      <input type = "submit" value = "Search" class="btn btn-primary button"/>
      </form>
+     <hr>
 <h1 id="city"> </h1>
   <br>
   <div class="Today" id="current-date">
     <h1>Date and Time</h1>
   </div>
-  <h2>  <span class="description" id="weather-description"></span>
+  <h2>  
+    <span class="description" id="weather-description"></span>
 </h2>
 <h2 class="caption">
   <span><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
@@ -46,13 +49,15 @@
   <li> Humidity: <span id="humidity"></span>%</li>
   <li> Wind: <span id="wind-speed"></span>mph</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
+<hr>
 <p>
 <a href="https://github.com/queensao/Weather-App-1"> Open-source Code</a> by Queen Asianya-Olisa
 </p>
+</div>
+</div>
+</div>
+
+</div>
 <script src="src/Javascript.js"></script>
   </body>
 </html>
