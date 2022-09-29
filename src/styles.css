@@ -12,9 +12,9 @@ ul {
   color: rgb(135, 135, 135);
   line-height: 19px;
   text-align: left;
-  position: fixed;
-  left: 62%;
-  top: 35%;
+  position: relative;
+  left: 85%;
+  top: -80px;
 }
 
 h1 {
@@ -65,12 +65,15 @@ a:active {
   border-radius: 5px;
   border: 1px solid #526072;
   background-color: rgb(188, 188, 240);
+  position: relative;
+  right: 13px;
 }
 
 .caption {
-  font-weight: thin;
-  font-size: 16px;
+  font-size: 30px;
   text-align: left;
+  position: relative;
+  top: -20px;
 }
 
 .content {
@@ -93,6 +96,8 @@ a:active {
   height: 27.7778px;
   line-height: 28.8px;
   text-align: left;
+  top: -25px;
+  position: relative;
 }
 
 .day {
@@ -106,5 +111,5 @@ a:active {
 .units {
   position: relative;
   font-size: 10px;
-  top: -8px;
+  top: -15px;
 }

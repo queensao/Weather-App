@@ -27,6 +27,9 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeatherCondition(response) {
   console.log(response.data);
+  //let iconElement = document.querySelector("#icon");
+  //iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  //);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
