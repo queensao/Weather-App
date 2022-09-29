@@ -23,88 +23,29 @@
     <div class="entirity row">
      <form id="search-form">
       
-      <input type = "search" placeholder="Insert name of city..." autofocus="on" autocomplete="off" id="city-input" class="search-box border-0"/>
+      <input type = "search" placeholder="Name of city..." autofocus="on" autocomplete="off" id="city-input" class="search-box"/>
 
 
-      <input type = "submit" value = "search" class="btn btn-primary"/>
-
-
-       <button class="btn btn-success" id="current-location-button">Current </button>
-
+      <input type = "submit" value = "search" class="btn btn-primary button"/>
      </form>
 <h1 id="city"> </h1>
   <br>
-  
   <div class="Today" id="current-date">
-    
     <h1>Date and Time</h1>
   </div>
+  <h2>  <span class="description" id="weather-description"></span>
+</h2>
 <h2 class="caption">
   <span><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
     alt="clear"
-    id="icon"/> </span>
-    <span class="temperature" id="temperature"> </span> <span class="units"> <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
+    id="icon"/></span>
+    <span class="temperature" id="temperature"></span><span class="units"> <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
 </h2>
-
-<div class="row col">
-<ul>
-  <li> <span id="weather-description"></span></li>
+<ul class="weather-list">
   <li> Feels Like: <span id="feels-like"></span>°C</li>
   <li> Humidity: <span id="humidity"></span>%</li>
   <li> Wind: <span id="wind-speed"></span>mph</li>
-  
 </ul>
-</div>
-<div class="content">
-<div class="container">
-<div class="row">
-    <div class="col day">
-      Mon
-    </div>
-    <div class="col day">
-      Tues
-    </div>
-    <div class="col day">
-      Wed
-    </div>
-    <div class="col day">
-      Thurs
-    </div>
-    <div class="col day">
-      Fri
-    </div>
-    <div class="col day">
-      Sat
-    </div>
-    <div class="col day">
-      Sun
-    </div>
-  </div>
-</div>
-<div class="container">
-<div class="row">
-    <div class="col temp">
-      18° 🌦
-    </div>
-    <div class="col temp">
-      19° ⛅️
-    </div>
-    <div class="col temp">
-      18° 🌤
-    </div>
-    <div class="col temp">
-      20° ☀️
-    </div>
-    <div class="col temp">
-      19° 🌥
-    </div>
-    <div class="col temp">
-      16° 🌨
-    </div>
-    <div class="col temp">
-      15°🌦
-    </div>
-  </div>
 </div>
 </div>
 </div>

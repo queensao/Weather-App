@@ -27,15 +27,18 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeatherCondition(response) {
   console.log(response.data);
-  //let iconElement = document.querySelector("#icon");
-  //iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  //);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("#feels-like").innerHTML = Math.round(
     response.data.main.feels_like
   );
@@ -93,7 +96,7 @@ function convertToCelsius(event) {
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+//let currentLocationButton = document.querySelector("#current-location-button");
+//currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
