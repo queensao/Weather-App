@@ -25,11 +25,11 @@ let dateElement = document.querySelector("#current-date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = `<div class="row">`;
   let forecastdays = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = `<div class="row">`;
   forecastdays.forEach(function (forecastday) {
     forecastHTML =
       forecastHTML +
@@ -55,9 +55,13 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+function getForecast(coordinates) {
+  let apiKey = "6a0bac9dced487830ce6066218a5481c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function displayWeatherCondition(response) {
-  console.log(response.data);
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
@@ -79,6 +83,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -131,4 +137,3 @@ celsiusLink.addEventListener("click", convertToCelsius);
 //currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
-displayForecast();
