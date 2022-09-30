@@ -134,11 +134,16 @@ hr {
   bottom: 185px;
 }
 
+.list {
+  font-weight: bold;
+}
+
 .units {
   position: relative;
   top: -40px;
   right: 5px;
   font-size: 12px;
+  color: #91b9bbfc;
 }
 
 .search-box:focus {
@@ -182,4 +187,16 @@ hr {
   text-align: left;
   top: -25px;
   position: relative;
+}
+
+#link {
+  color: #91b9bbfc;
+}
+
+#celsius-link {
+  color: #91b9bbfc;
+}
+
+#fahrenheit-link {
+  color: #91b9bbfc;
 }
