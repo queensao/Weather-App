@@ -17,47 +17,77 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="container">
-    <div class="entirity row">
-     <form id="search-form">
-      
-      <input type = "search" placeholder="Name of city..." autofocus="off" autocomplete="off" id="city-input" class="search-box"/>
-
-
-      <input type = "submit" value = "Search" class="btn btn-primary button"/>
-     </form>
-     <hr>
-<h1 id="city"> </h1>
-  <br>
-  <div class="Today" id="current-date">
-    <h1>Date and Time</h1>
-  </div>
-  <h2>  
-    <span class="description" id="weather-description"></span>
-</h2>
-<h2 class="caption">
-  <span><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-    alt="clear"
-    id="icon"/></span>
-    <span class="temperature" id="temperature"></span><span class="units"> <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a> </span>
-</h2>
-<ul class="weather-list">
-  <li> Feels Like: <span id="feels-like"></span>°C</li>
-  <li> Humidity: <span id="humidity"></span>%</li>
-  <li> Wind: <span id="wind-speed"></span>mph</li>
-</ul>
-<hr>
-<p>
-<a href="https://github.com/queensao/Weather-App-1"> Open-source Code</a> by Queen Asianya-Olisa
-</p>
-</div>
-</div>
-</div>
-
-</div>
-<script src="src/Javascript.js"></script>
+      <div class="entirity row">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Name of city..."
+            autofocus="off"
+            autocomplete="off"
+            id="city-input"
+            class="search-box"
+          />
+          <input type="submit" value="Search" class="btn btn-primary button" />
+        </form>
+        <hr />
+        <h1 id="city"></h1>
+        <br />
+        <div class="Today" id="current-date">
+          <h1>Date and Time</h1>
+        </div>
+        <h2>
+          <span class="description" id="weather-description"></span>
+        </h2>
+        <h2 class="caption">
+          <span
+            ><img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="clear"
+              id="icon"
+          /></span>
+          <span class="temperature" id="temperature"></span
+          ><span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+        </h2>
+        <ul class="weather-list">
+          <li>Feels Like: <span id="feels-like"></span>°C</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind-speed"></span>mph</li>
+        </ul>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-day">
+                Fri
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  alt="clear"
+                  width="24"
+                  class="weather-icon"
+                />
+                <div class="weather-forecast-temp">
+                  <span class="weather-forecast-temp-max"> 18°</span> |
+                  <span class="weather-forecast-temp-min">12°</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p>
+            <a href="https://github.com/queensao/Weather-App-1">
+              Open-source Code</a
+            >
+            by Queen Asianya-Olisa
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/Javascript.js"></script>
   </body>
 </html>

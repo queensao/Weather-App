@@ -145,6 +145,30 @@ hr {
   outline: 1px solid #91b9bbfc;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.weather-forecast-day {
+  position: relative;
+  bottom: 10px;
+  font-size: 16px;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}
+
 #current-date {
   color: rgb(135, 135, 135);
   display: block;
