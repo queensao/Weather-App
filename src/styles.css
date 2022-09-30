@@ -151,14 +151,16 @@ hr {
 }
 
 .weather-icon {
-  width: 24px;
-  height: 24px;
+  position: relative;
+  left: 0px;
 }
 
 .weather-forecast-day {
   position: relative;
-  bottom: 10px;
+  bottom: 100px;
   font-size: 16px;
+  margin-bottom: -110px;
+  margin-top: -30px;
 }
 
 .weather-forecast-temp {
