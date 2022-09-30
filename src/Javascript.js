@@ -25,6 +25,37 @@ let dateElement = document.querySelector("#current-date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let forecastdays = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  forecastdays.forEach(function (forecastday) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="weather-forecast-day">
+                ${forecastday}
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  alt="clear"
+                  width="24"
+                  class="weather-icon"
+                />
+                <div class="weather-forecast-temp">
+                  <span class="weather-forecast-temp-max"> 18°</span> |
+                  <span class="weather-forecast-temp-min">12°</span>
+                </div>
+              </div>
+            </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   console.log(response.data);
   let iconElement = document.querySelector("#icon");
@@ -100,3 +131,4 @@ celsiusLink.addEventListener("click", convertToCelsius);
 //currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
+displayForecast();
